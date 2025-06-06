@@ -9,9 +9,6 @@ for (let i = 0; i < GRID_SIZE; i++) {
     for (let j = 0; j < GRID_SIZE; j++) {
         const cell = document.createElement("div");
         cell.classList.add("cell");
-        cell.style.width = `${GRID_LENGTH / GRID_SIZE}px`;
-        cell.style.height = `${GRID_LENGTH / GRID_SIZE}px`;
-        cell.style.border = "1px solid black";
         row.appendChild(cell);
     }
 }
