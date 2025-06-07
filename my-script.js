@@ -32,9 +32,18 @@ function addTrail() {
 // Resets grid when button is clicked. The new squares per side is determined 
 // by user input, but the grid takes up the same total space as before.
 function resetGrid() {
-    // const button = document.querySelector("button");
-    // button.addEventListener("click", () => {
-    //     const squares = prompt("How many squares per side?");
-        
-    // });
+    const button = document.querySelector("button");
+    button.addEventListener("click", () => {
+        do {
+            let squares = prompt("How many squares per side? (Max: 100)");
+
+        } while (squares > 100);
+        removeGrid(); // TODO:
+        createGrid(squares);
+    });
+}
+
+
+// removes all elements within the existing grid
+function removeGrid() {
 }
