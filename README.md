@@ -1,6 +1,6 @@
 # Etch-a-Sketch
 
-A browser-based drawing application that combines the functionality of a digital sketchpad with the nostalgic feel of an Etch-A-Sketch, built as part of [The Odin Project](https://www.theodinproject.com/) curriculum.
+A browser-based digital sketchpad, built as part of [The Odin Project](https://www.theodinproject.com/) curriculum.
 
 ## Description
 
