@@ -1,6 +1,6 @@
-
 createGrid();
 addTrail();
+resetGrid();
 
 // Creates a "<squares> by <squares>" grid
 function createGrid(squares = 16) {
@@ -34,16 +34,17 @@ function addTrail() {
 function resetGrid() {
     const button = document.querySelector("button");
     button.addEventListener("click", () => {
-        do {
-            let squares = prompt("How many squares per side? (Max: 100)");
-
-        } while (squares > 100);
-        removeGrid(); // TODO:
+        let squares = prompt("How many squares per side?");
+        if (squares < 1 || squares > 100) {
+            alert("Squares must be a number between 1 and 100");
+        }
+        removeGrid(); 
         createGrid(squares);
     });
 }
 
-
-// removes all elements within the existing grid
+// Removes all elements within the existing grid
 function removeGrid() {
+    const rows = document.querySelectorAll(".row");
+    rows.forEach((row) => row.remove());
 }
