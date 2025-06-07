@@ -2,12 +2,17 @@
     box-sizing: border-box;
 }
 
-#container {
-    width: 800px;
-    height: 800px;
+body {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    align-items: center;
+}
+
+#grid {
+    width: 700px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
 }
 
 .row {
