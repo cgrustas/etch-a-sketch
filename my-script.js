@@ -2,7 +2,7 @@
 createGrid();
 addTrail();
 
-// creates an "<squares> by <squares>" grid
+// Creates a "<squares> by <squares>" grid
 function createGrid(squares = 16) {
     const GRID_LENGTH = 960; // pixels
     const container = document.querySelector("#grid");
@@ -18,7 +18,7 @@ function createGrid(squares = 16) {
     }
 }
 
-// adds a "hover" effect to each cell so that the grid divs change color 
+// Adds a "hover" effect to each cell so that the grid divs change color 
 // when your mouse passes over them, leaving a "pixelated" trail 
 function addTrail() {
     const cells = document.querySelectorAll(".cell");
@@ -29,8 +29,12 @@ function addTrail() {
     });
 }
 
-// const button = document.querySelector("button");
-// button.addEventListener("click", () => {
-//     const squares = prompt("How many squares per side?");
-    
-// });
+// Resets grid when button is clicked. The new squares per side is determined 
+// by user input, but the grid takes up the same total space as before.
+function resetGrid() {
+    // const button = document.querySelector("button");
+    // button.addEventListener("click", () => {
+    //     const squares = prompt("How many squares per side?");
+        
+    // });
+}
