@@ -1,5 +1,5 @@
 createGrid();
-resetGrid();
+initializeResetButton();
 
 // Creates a "<squares> by <squares>" grid
 function createGrid(squares = 16) {
@@ -31,7 +31,7 @@ function addTrail() {
 
 // Resets grid when button is clicked. The new squares per side is determined 
 // by user input, but the grid takes up the same total space as before.
-function resetGrid() {
+function initializeResetButton() {
     const button = document.querySelector("button");
     button.addEventListener("click", () => {
         let squares = prompt("How many squares per side?");
