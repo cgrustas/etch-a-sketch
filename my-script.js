@@ -24,7 +24,7 @@ function addTrail() {
     const cells = document.querySelectorAll(".cell");
     cells.forEach((cell) => {
         cell.addEventListener("mouseenter", () => {
-            cell.style.backgroundColor = "lightblue";
+            cell.style.backgroundColor = "blue";
         });
     });
 }
