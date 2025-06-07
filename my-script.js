@@ -1,5 +1,4 @@
 createGrid();
-addTrail();
 resetGrid();
 
 // Creates a "<squares> by <squares>" grid
@@ -16,6 +15,7 @@ function createGrid(squares = 16) {
             row.appendChild(cell);
         }
     }
+    addTrail();
 }
 
 // Adds a "hover" effect to each cell so that the grid divs change color 
