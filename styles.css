@@ -7,6 +7,7 @@
     height: 800px;
     display: flex;
     flex-direction: column;
+    margin: auto;
 }
 
 .row {
@@ -19,3 +20,8 @@
     flex: 1;
     border: 1px solid black;
 }
+/* 
+button {
+    align-self: center;
+    margin-bottom: 8px;
+} */
