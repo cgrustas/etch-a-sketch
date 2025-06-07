@@ -9,7 +9,11 @@ for (let i = 0; i < GRID_SIZE; i++) {
     for (let j = 0; j < GRID_SIZE; j++) {
         const cell = document.createElement("div");
         cell.classList.add("cell");
+        cell.addEventListener('mouseenter', () => {
+            cell.style.backgroundColor = "lightblue";
+        });
         row.appendChild(cell);
     }
 }
 console.log(container);
+
