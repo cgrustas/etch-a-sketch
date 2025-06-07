@@ -20,8 +20,9 @@
     flex: 1;
     border: 1px solid black;
 }
-/* 
+
 button {
     align-self: center;
+    font-size: 18px;
     margin-bottom: 8px;
-} */
+}
